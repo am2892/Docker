@@ -26,3 +26,27 @@ CONTAINER ID        IMAGE               COMMAND             CREATED             
 d45cd1d3c51d        hello-world         "/hello"            About a minute ago   Exited (0) About a minute ago                       competent_brattain
 64548aad840f        hello-world         "/hello"            4 minutes ago        Exited (0) 4 minutes ago                            dreamy_archimedes
 4933987dee38        hello-world         "/hello"            4 minutes ago        Exited (0) 4 minutes ago                            elegant_austin
+
+Sending build context to Docker daemon  45.57kB
+Step 1/7 : FROM node:current-slim
+ ---> 26932a190e66
+Step 2/7 : WORKDIR /usr/src/app
+ ---> Using cache
+ ---> e6ab8d3711d4
+Step 3/7 : COPY package.json .
+ ---> Using cache
+ ---> 4fba774d0f68
+Step 4/7 : RUN npm install
+ ---> Using cache
+ ---> cbe109c0b73a
+Step 5/7 : EXPOSE 8080
+ ---> Using cache
+ ---> 47953c5955ef
+Step 6/7 : CMD [ "npm", "start" ]
+ ---> Using cache
+ ---> f90abcc49ba6
+Step 7/7 : COPY . .
+ ---> Using cache
+ ---> d8bb73a28dea
+Successfully built d8bb73a28dea
+Successfully tagged bulletinboard:1.0
