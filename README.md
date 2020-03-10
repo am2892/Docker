@@ -1,4 +1,5 @@
 
+SECTION 1
 Hello from Docker!
 This message shows that your installation appears to be working correctly.
 
@@ -27,6 +28,7 @@ d45cd1d3c51d        hello-world         "/hello"            About a minute ago  
 64548aad840f        hello-world         "/hello"            4 minutes ago        Exited (0) 4 minutes ago                            dreamy_archimedes
 4933987dee38        hello-world         "/hello"            4 minutes ago        Exited (0) 4 minutes ago                            elegant_austin
 
+SECTION 2
 Sending build context to Docker daemon  45.57kB
 Step 1/7 : FROM node:current-slim
  ---> 26932a190e66
@@ -50,3 +52,7 @@ Step 7/7 : COPY . .
  ---> d8bb73a28dea
 Successfully built d8bb73a28dea
 Successfully tagged bulletinboard:1.0
+SCREENSHOT: Docker Bulletin Board (localhost:8000) - https://github.com/am2892/Docker/blob/master/Screen%20Shot%202020-03-09%20at%204.24.39%20PM.png
+
+SECTION 3
+SCREENSHOT: Docker - push image - https://github.com/am2892/Docker/blob/master/Screen%20Shot%202020-03-09%20at%205.50.19%20PM.png
